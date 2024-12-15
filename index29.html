@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+        }
+        .todo{
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 400px;
+            padding: 10px;
+        }
+
+        .form button{
+            margin-left: -8px;
+            background-color: cornflowerblue;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .form input{
+            flex-grow: 1;
+            
+        }
+        
+        .form{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li{
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <button type="button" onclick="showAlert('gfhkl;', event)">Press Me!</button> -->
+    <button id="button">Press me!</button>
+    <button id="butt">Press me!</button>
+    <button id="buttt">Press me!</button>
+    <button id="butto">Random colors!</button>
+
+        <div class="todo">
+            <h2>Список задач</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" onclick="markTask(event)"> Встать с кровати 
+                </li> 
+                <li>
+                    <input type="checkbox" onclick="markTask(event)"> Лечь спать
+                </li>
+                <li>
+                    <input type="checkbox" onclick="markTask(event)"> Спать
+                </li>
+            </ul>
+            <div class="form">
+                <input type="text" id="task">
+                <button onclick="addTask()">Добавить</button>
+            </div>
+        </div>
+
+
+
+    <script src="index29.js"></script>
+</body>
+</html>
